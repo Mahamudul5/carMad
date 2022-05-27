@@ -5,7 +5,7 @@ const UpdateSingleItem = () => {
     const handleDelivered = () => {
         const newQuantity = parseInt(item.quantity - 1);
         console.log(newQuantity);
-        const url = `http://localhost:5000/item/${Id}`;
+        const url = `https://lit-savannah-99211.herokuapp.com/item/${Id}`;
         fetch(url, {
             method: "PUT",
             headers: {
@@ -21,7 +21,7 @@ const UpdateSingleItem = () => {
     const [item, setItem] = useState({});
 
     useEffect(() => {
-        const url = `http://localhost:5000/item/${Id}`;
+        const url = `https://lit-savannah-99211.herokuapp.com/item/${Id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setItem(data));

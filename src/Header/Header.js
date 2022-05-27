@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../firebase.init';
 import { signOut } from 'firebase/auth';
-import photo from '../images/uni-fav.png';
+import photo from '../images/carFav.png';
 
 
 const Header = () => {
@@ -24,13 +24,13 @@ const Header = () => {
                             width="30"
                             height="30"
                             className="d-inline-block align-top"
-                        />{' '}Uni Store House</Navbar.Brand>
+                        />{' '}carMad</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/Home">Home</Nav.Link>
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
-                            <Nav.Link as={Link} to="/Inventory">Inventory</Nav.Link>
+                            <Nav.Link as={Link} to="/Inventory">Products</Nav.Link>
                             <Nav.Link as={Link} to="/Blog">Blog</Nav.Link>
                         </Nav>
                         <Nav>
@@ -43,7 +43,7 @@ const Header = () => {
                                 Sign Up
                             </Nav.Link>
                             <Nav.Link eventKey={2} as={Link} to="/ManageInventory">
-                                ManageInventory
+                                ManageProducts
                             </Nav.Link>
                             <Nav.Link eventKey={2} as={Link} to="/Myitem">
                                 Myitem
