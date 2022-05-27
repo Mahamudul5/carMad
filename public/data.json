@@ -1,74 +1,74 @@
 [
     {
         "id": 1,
-        "name": "Dove-shop",
-        "price": "30",
+        "name": "Car Stearing",
+        "price": "$30",
         "quantity": "5",
-        "description": "it's so good for girl",
-        "img": "./images/dove.jpg"
+        "description": "it's best quality car stering for all kind of car.",
+        "img": "./images/carStearing2.jpg"
     },
     {
         "id": 2,
-        "name": "Dove-shampoo",
-        "price": "550",
+        "name": "Jambo Car Tire",
+        "price": "$550",
         "quantity": "1",
-        "description": "it's so good for girl hair.",
-        "img": "./images/dove_shampoo.jpg"
+        "description": "it's so good for long lasting.",
+        "img": "./images/car tire.jpg"
     },
     {
         "id": 3,
-        "name": "Sunslik-shampoo",
-        "price": "100",
+        "name": "primeo v8 door",
+        "price": "$100",
         "quantity": "15",
-        "description": ".It's good for hair.",
-        "img": "./images/sunsilk.jpg"
+        "description": ".It's premium quality door with all accesories.",
+        "img": "./images/door1.jpg"
     },
     {
         "id": 4,
-        "name": "Chaka-ball shop",
-        "price": "30",
+        "name": "4k font car camera",
+        "price": "$300",
         "quantity": "52",
-        "description": "white white and white .its make your dress white",
-        "img": "./images/chaka_ball.jpg"
+        "description": "best quality 4k camera with 360 degree view",
+        "img": "./images/camera.jpg"
     },
     {
         "id": 5,
-        "name": "Rin whashing powder",
-        "price": "35",
+        "name": "Car toolKit",
+        "price": "$35",
         "quantity": "56",
-        "description": "sadaar cheyeo beshi sadaa",
-        "img": "./images/Rin-Washing-Powder.jpg"
+        "description": "all in one tool kit for Car .best quality in price",
+        "img": "./images/allInOneToolKit.jpg"
     },
     {
         "id": 6,
-        "name": "lifebeoy-shop",
+        "name": "Car cover",
         "price": "15",
         "quantity": "20",
-        "description": "jibanu theke surokkha",
-        "img": "./images/lifebouy.jpg"
+        "description": "premium quality car cover .its water proved and dust proved. ",
+        "img": "./images/car coveer.jpg"
     },
     {
         "id": 7,
-        "name": "Lifebeoy-handwhash",
-        "price": "40",
+        "name": "rgb light for car",
+        "price": "$40",
         "quantity": "560",
-        "description": "jibanu muktto proti kkhon",
-        "img": "./images/lifebouyhandwash (1).jpg"
+        "description": "this is beautiful rgb light for make your car beautiful",
+        "img": "./images/car-interior_light.webp"
     },
     {
         "id": 8,
-        "name": "Vaseline",
-        "price": "5",
+        "name": "gear box",
+        "price": "$5",
         "quantity": "567",
-        "description": "shiter surokkha",
-        "img": "./images/vaseline.jpg"
+        "description": "456-vrt original gear box .we provide 2 years services gurunty.",
+        "img": "./images/gear_handle_cover.jpg"
     },
     {
         "id": 9,
-        "name": "Vasline-loson",
-        "price": "35",
+        "name": "VIP horn ",
+        "price": "$35",
         "quantity": "56",
-        "description": "suskhota theke rokkha",
-        "img": "./images/vaseline-lot.jpg"
+        "description": "vip and high quality horn for car and zeep.",
+        "img": "./images/horn.jpg"
     }
 ]

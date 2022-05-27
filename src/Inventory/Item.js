@@ -26,7 +26,7 @@ const Item = ({ item }) => {
                             <p className='text-center'>supplier:{supplier}</p>
 
                         </Card.Text>
-                        <Button onClick={() => goToDetails(_id)} variant="primary d-block mx-auto">Update</Button>
+                        <Button onClick={() => goToDetails(_id)} variant="primary d-block mx-auto">Purchase</Button>
                     </Card.Body>
                 </Card>
             </div>

@@ -7,7 +7,7 @@ const Inventory = () => {
     const [Inventory] = useData();
     return (
         <div>
-            <h1 className='text-center text-primary'>Inventory</h1>
+            <h1 className='text-center text-primary mt-5'>Products</h1>
             <div className='Item-card'>
                 {
                     Inventory.map(item => <Item
