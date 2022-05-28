@@ -16,6 +16,7 @@ import MyProfile from './MyProfile/MyProfile';
 import PageNotFound from './PageNotFoound/PageNotFound';
 import RemoveItem from './RemoveItem/RemoveItem';
 import Reviews from './Reviews/Reviews';
+import SelectCar from './SelectCar/SelectCar';
 import SignUp from './SignUp/SignUp';
 import UpdateSingleItem from './UpdateSingleItem/UpdateSingleItem';
 
@@ -36,6 +37,7 @@ function App() {
           <AddItem />
         </RequireAuth>} />
         <Route path="/Myitem" element={<Myitem />} />
+        <Route path="/SelectCar" element={<SelectCar />} />
         <Route path="/Reviews" element={<Reviews />} />
         <Route path="/AddReview" element={<AddReview />} />
         <Route path="/MyProfile" element={<MyProfile />} />
