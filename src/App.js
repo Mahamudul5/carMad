@@ -11,6 +11,7 @@ import LogIn from './LogIn/LogIn';
 import RequireAuth from './LogIn/RequireAuth';
 import ManageInventory from './ManageInventory/ManageInventory';
 import Myitem from './Myitem/Myitem';
+import MyProfile from './MyProfile/MyProfile';
 import PageNotFound from './PageNotFoound/PageNotFound';
 import RemoveItem from './RemoveItem/RemoveItem';
 import SignUp from './SignUp/SignUp';
@@ -33,6 +34,7 @@ function App() {
           <AddItem />
         </RequireAuth>} />
         <Route path="/Myitem" element={<Myitem />} />
+        <Route path="/MyProfile" element={<MyProfile />} />
         <Route path="/RemoveItem" element={<RemoveItem />} />
         <Route path="/ManageInventory" element={<ManageInventory />} />
         <Route path="/logIn" element={<LogIn />} />
