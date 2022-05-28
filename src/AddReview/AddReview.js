@@ -9,7 +9,7 @@ const AddReview = () => {
     const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
-        const url = "http://localhost:5000/review";
+        const url = "http://localhost:5000/reviews";
         fetch(url, {
             method: 'POST',
             headers: {
