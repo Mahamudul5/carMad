@@ -36,14 +36,14 @@ const Header = () => {
                         <Nav>
                             {
                                 user ?
-                                    <button className='btn btn-link text-dark text-decoration-none' onClick={handleSignOut}>sign Out</button>
+                                    <button className='btn btn-link text-dark text-decoration-none' onClick={handleSignOut}>signOut</button>
                                     :
-                                    <Nav.Link as={Link} to="/logIn">Log In </Nav.Link>}
+                                    <Nav.Link as={Link} to="/logIn">LogIn </Nav.Link>}
                             <Nav.Link eventKey={2} as={Link} to="/signUp">
-                                Sign Up
+                                SignUp
                             </Nav.Link>
                             <Nav.Link eventKey={2} as={Link} to="/ManageInventory">
-                                ManageProducts
+                                ManageProduct
                             </Nav.Link>
                             <Nav.Link eventKey={2} as={Link} to="/Myitem">
                                 Myitem

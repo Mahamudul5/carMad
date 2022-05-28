@@ -4,6 +4,7 @@ import AddItem from './AddItem/AddItem';
 import AddReview from './AddReview/AddReview';
 import './App.css';
 import Blog from './Blog/Blog';
+import Purchase from './Blog/Purchase/Purchase';
 import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Home from './Home/Home';
@@ -39,6 +40,7 @@ function App() {
         <Route path="/Myitem" element={<Myitem />} />
         <Route path="/SelectCar" element={<SelectCar />} />
         <Route path="/Reviews" element={<Reviews />} />
+        <Route path="/Purchase" element={<Purchase />} />
         <Route path="/AddReview" element={<AddReview />} />
         <Route path="/MyProfile" element={<MyProfile />} />
         <Route path="/RemoveItem" element={<RemoveItem />} />
