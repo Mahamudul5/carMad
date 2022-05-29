@@ -1,27 +1,33 @@
 import React, { useRef } from 'react';
 import { } from 'react-bootstrap';
 import { useSendPasswordResetEmail, useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import { Link, useLocation, useNavigate, } from 'react-router-dom';
+import { Link, useNavigate, } from 'react-router-dom';
 import auth from '../firebase.init';
 import logo from '../images/googleLogo.png'
 import './LogIn.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import useToken from '../CustomHooks/useToken';
+
 
 const LogIn = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
-    const location = useLocation();
-    let from = location.state?.from?.pathname || "/";
+
+
+
+
     const [
         signInWithEmailAndPassword,
         user,
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
-    if (user) {
-        navigate(from, { replace: true });
+    const [signInWithGoogle, userGoogle, loadingGoogle, errorGoogle] = useSignInWithGoogle(auth);
+    const [token] = useToken(user || userGoogle);
+    if (token) {
+        navigate('/');
     }
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
     const handleReSetPassword = async () => {
@@ -30,6 +36,8 @@ const LogIn = () => {
             await sendPasswordResetEmail(email);
             toast('Email sent .Please Check.');
         }
+
+
         else {
             toast('Please Enter valid Email.');
         }
@@ -40,7 +48,7 @@ const LogIn = () => {
         const password = passwordRef.current.value;
         signInWithEmailAndPassword(email, password);
     }
-    const [signInWithGoogle, userGoogle, loadingGoogle, errorGoogle] = useSignInWithGoogle(auth);
+
     let errorText;
     if (error || errorGoogle) {
 
@@ -53,9 +61,8 @@ const LogIn = () => {
     if (loading || loadingGoogle) {
         loadingText = <p className='text-center'>Loading...</p>;
     }
-    if (userGoogle) {
-        navigate('/');
-    }
+
+
     return (
         <div className='log-in'>
             <h2 className='text-center text-primary mt-5'>logIn</h2>

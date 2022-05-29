@@ -20,6 +20,8 @@ import Reviews from './Reviews/Reviews';
 import SelectCar from './SelectCar/SelectCar';
 import SignUp from './SignUp/SignUp';
 import UpdateSingleItem from './UpdateSingleItem/UpdateSingleItem';
+import Users from './Users/Users';
+
 
 function App() {
   return (
@@ -39,6 +41,7 @@ function App() {
         </RequireAuth>} />
         <Route path="/Myitem" element={<Myitem />} />
         <Route path="/SelectCar" element={<SelectCar />} />
+        <Route path="/User" element={<Users />} />
         <Route path="/Reviews" element={<Reviews />} />
         <Route path="/Purchase" element={<Purchase />} />
         <Route path="/AddReview" element={<AddReview />} />

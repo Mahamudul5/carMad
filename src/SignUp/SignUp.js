@@ -3,7 +3,8 @@ import { Link, useNavigate } from 'react-router-dom';
 import logo from '../images/googleLogo.png'
 import './SignUp.css'
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle } from 'react-firebase-hooks/auth';
-import auth from '../firebase.init'
+import auth from '../firebase.init';
+import useToken from '../CustomHooks/useToken';
 
 const SignUp = () => {
     const [
@@ -13,6 +14,7 @@ const SignUp = () => {
         error,
     ] = useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
     const navigate = useNavigate();
+    const [token] = useToken(user);
     if (user) {
         navigate('/');
     }
@@ -20,12 +22,11 @@ const SignUp = () => {
 
     const emailRef = useRef('');
     const passwordRef = useRef('');
-    const reEnterpasswordRef = useRef('');
     const submitForm = event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        const reEnterpassword = reEnterpasswordRef.current.value;
+
         // console.log(email, password, reEnterpassword);
         createUserWithEmailAndPassword(email, password);
     }
@@ -56,9 +57,7 @@ const SignUp = () => {
                     <div className="mb-3">
                         <input ref={passwordRef} type="password" className="form-control" id="exampleInputPassword1" placeholder='Password' />
                     </div>
-                    <div className="mb-3">
-                        <input ref={reEnterpasswordRef} type="password" className="form-control" id="exampleInputPassword1" placeholder='Re-enter Password' />
-                    </div>
+
 
                     <button type="submit" className="btn btn-primary ps-5 pe-5 d-block mx-auto">Sign Up</button>
                     <p>Already have an Account? Please <Link to="/logIn">LogIn</Link> </p>

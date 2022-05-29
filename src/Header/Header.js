@@ -12,6 +12,7 @@ const Header = () => {
     const [user] = useAuthState(auth);
     const handleSignOut = () => {
         signOut(auth);
+        localStorage.removeItem('accessToken');
     }
     return (
         <div>
@@ -32,6 +33,8 @@ const Header = () => {
                             <Nav.Link as={Link} to="/about">About</Nav.Link>
                             <Nav.Link as={Link} to="/Inventory">Products</Nav.Link>
                             <Nav.Link as={Link} to="/Blog">Blog</Nav.Link>
+                            <Nav.Link as={Link} to="/AddItem">AddItem</Nav.Link>
+                            <Nav.Link as={Link} to="/AddReview">AddReview</Nav.Link>
                         </Nav>
                         <Nav>
                             {

@@ -56,7 +56,7 @@ const UpdateSingleItem = () => {
                             <label class="label">
                                 <span class="label-text">Name:</span>
                             </label>
-                            <input type="name" value={user.displayName} class="input input-bordered w-full max-w-xs" readOnly {...register("name")} /> <br />
+                            <input type="name" value={user.displayName} class="input input-bordered w-full max-w-xs"  {...register("name")} /> <br />
                             <label class="label">
                                 <span class="label-text">Email:</span>
                             </label>
