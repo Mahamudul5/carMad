@@ -20,7 +20,7 @@ const Purchase = () => {
 
 
     const onSubmit = data => {
-        const url = "http://localhost:5000/orders";
+        const url = "http:// https://lit-savannah-99211.herokuapp.com/orders";
         fetch(url, {
             method: 'POST',
             headers: {
