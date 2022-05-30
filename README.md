@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# CarMad
 
-CarMad: [Live site:](https://carmad-716ca.web.app).
+CarMad: [Live site](https://carmad-716ca.web.app)
 
 ## Features of this site:
 
