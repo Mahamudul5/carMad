@@ -1,10 +1,23 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+CarMad: [Live site:](https://carmad-716ca.web.app).
 
-## Available Scripts
+## Features of this site:
 
-In the project directory, you can run:
+- you can order from this site.
+- you give reviews about products.
+- An admin can remove products.
+- you join with us with your email
+- you can search products for write your model name
+
+
+## Usage Tecnology for This Site:
+ 
+- react.js.
+- firebase authentication.
+- react-hooks-form.
+- react hooks.
+- react-bootstrap.
 
 ### `npm start`
 
