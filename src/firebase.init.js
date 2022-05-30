@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyA3OiqfWtVErNeYM_1mud_UZi39wTQ7Pg0",
-    authDomain: "uni-store-house.firebaseapp.com",
-    projectId: "uni-store-house",
-    storageBucket: "uni-store-house.appspot.com",
-    messagingSenderId: "947198321538",
-    appId: "1:947198321538:web:b0bb68832c6b90f198a59b"
+    apiKey: "AIzaSyDMGHyNsZPG3U6Uw_6teQc6Fbn0AMUPNKU",
+    authDomain: "carmad-716ca.firebaseapp.com",
+    projectId: "carmad-716ca",
+    storageBucket: "carmad-716ca.appspot.com",
+    messagingSenderId: "206570452168",
+    appId: "1:206570452168:web:ae1342e75bda8ff7c5a1fd"
 };
 
 // Initialize Firebase

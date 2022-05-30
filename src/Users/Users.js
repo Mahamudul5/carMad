@@ -5,7 +5,7 @@ import Loading from '../LoadingPage/LoadingPage';
 import User from './User';
 
 const Users = () => {
-    const { data: users, isLoading, refetch } = useQuery('user', () => fetch('http:// https://lit-savannah-99211.herokuapp.com/user', {
+    const { data: users, isLoading, refetch } = useQuery('user', () => fetch('https://lit-savannah-99211.herokuapp.com/user', {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('accessToken')}`

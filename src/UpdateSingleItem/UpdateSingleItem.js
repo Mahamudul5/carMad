@@ -18,7 +18,7 @@ const UpdateSingleItem = () => {
             .then(data => setItem(data));
     });
     const onSubmit = data => {
-        const url = "http:// https://lit-savannah-99211.herokuapp.com/orders";
+        const url = "https://lit-savannah-99211.herokuapp.com/orders";
         fetch(url, {
             method: 'POST',
             headers: {
